@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 500px;
+            height: 200px;
+            margin: 300px auto;
+            position: relative;
+            /* border: 1px solid black; */
+            transform-style: preserve-3d;
+            transition: 4s;
+        }
+        .box:hover{
+            transform: rotate3d(1,1,1,360deg);
+        }
+        .box>h1{
+            font-size: 225px;
+            position: absolute;
+            top: 0;left: 0;
+            margin: 25px auto;
+            text-align: center;
+        }
+        .box>h1:nth-of-type(2){
+            transform: translateZ(-2px);
+        }
+        .box>h1:nth-of-type(3){
+            transform: translateZ(-4px);
+        }
+        .box>h1:nth-of-type(4){
+            transform: translateZ(-6px);
+        }
+        .box>h1:nth-of-type(5){
+            transform: translateZ(-8px);
+        }
+        .box>h1:nth-of-type(6){
+            transform: translateZ(-10px);
+        }
+        .box>h1:nth-of-type(7){
+            transform: translateZ(-12px);
+        }
+        .box>h1:nth-of-type(8){
+            transform: translateZ(-14px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Zahra</h1>
+        <h1>Zahra</h1>
+        <h1>Zahra</h1>
+        <h1>Zahra</h1>
+        <h1>Zahra</h1>
+        <h1>Zahra</h1>
+        <h1>Zahra</h1>
+        <h1>Zahra</h1>
+    </div>
+</body>
+</html>
